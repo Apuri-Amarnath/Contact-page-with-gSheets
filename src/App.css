@@ -1,38 +1,107 @@
+/* Base styles */
 .App {
   text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right, .left {
+  width: 100%; /* Change the width to 100% for both .right and .left */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Change flex direction to column */
+  min-height: 550px;
+  width: 80%; /* Adjust the width as needed */
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+/* Responsive styles using media queries */
+@media screen and (min-width: 768px) {
+  .flex-box {
+    flex-direction: row; /* Switch back to row layout for larger screens */
+  }
+
+  .right, .left {
+    width: 50%;
+  }
+
+  .flex-box {
+    width: 65%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* Remaining styles */
+.App {
+  background-color: #191a1d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(206, 233, 238);
 }
 
-.App-link {
-  color: #61dafb;
+.App h1 {
+  color: bisque;
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-image {
+  height: 420px;
+  width: 80%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.contact-form input {
+  height: 20px;
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 0px;
+}
+
+.heading {
+  font-size: 30px;
+  color: rgb(42, 138, 228);
+  font-family: monospace;
+}
+
+button {
+  background-color: rgb(0, 153, 255);
+  padding: 20px;
+  height: 20px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 10px;
+  border-radius: 15px;
+  border: 0px;
+  margin: 0px;
+}
+
+.response-div {
+  color: rgb(0, 0, 0);
+  font-size: large;
 }
