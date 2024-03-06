@@ -14,7 +14,7 @@ This React application is a simple contact form that allows users to submit thei
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/contact-form-react.git
+   git clone https://github.com/Apuri-Amarnath/Contact-page-with-gSheets.git
    ```
 
 2. Install dependencies:
@@ -59,7 +59,7 @@ The application features a clean and responsive design. Media queries are used t
 The form data is submitted to a Google Apps Script deployed as a web app. Ensure that the deployment URL in the `fetch` function within `App.js` points to your own deployment.
 
 ```javascript
-fetch("YOUR_GOOGLE_SCRIPT_DEPLOYMENT_URL", {
+fetch("https://script.google.com/macros/s/AKfycbxQxa7q05XGTGhla_Pts8cA8d3FS0Cmj-RLtO6ZQuUAaxKMkJVyoruZuVd0JZaA3bztHg/exec", {
   method: "POST",
   body: new URLSearchParams(formRespE),
 })
