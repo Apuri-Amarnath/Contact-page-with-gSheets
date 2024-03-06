@@ -65,6 +65,8 @@ fetch("YOUR_GOOGLE_SCRIPT_DEPLOYMENT_URL", {
 })
 // ...
 ```
+## Here is the googlesheets url:
+- https://docs.google.com/spreadsheets/d/1F9dC31Awn4CJeUW98LcHHxQaBZwLrZOMzE0jdy0pKaM/edit?usp=sharing
 
 ## License
 
